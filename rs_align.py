@@ -82,7 +82,8 @@ try:
         color_image = np.asanyarray(color_frame.get_data())
 
         cv2.imwrite("color_image.png", color_image)
-        cv2.imwrite("depth_image.png", depth_image.astype(np.uint16), -1)
+        # cv2.imwrite("depth_image.png", depth_image.astype(np.uint16), -1)
+        cv2.imwrite("depth_image.png", depth_image.astype(np.uint16))
 
         breakpoint()
 
